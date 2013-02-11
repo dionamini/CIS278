@@ -40,10 +40,6 @@ int paintRequired(int squareFt)
 		return 1;
 	else
 		return 1 + (paintRequired(squareFt - 115));
-	
-	// double paint;
-	// paint = ceil(squareFt / SQFT_PER_GAL);
-	// return paint;
 }
 
 double computeLabor(int squareFt) 
@@ -96,9 +92,9 @@ int main()
 
 	cout << paintNeed << " gallons of paint required" << endl;
 	cout << "$" << (paintNeed * PAINT_COST) << " is the cost of paint" << endl;
-	cout << hoursNeed << " is the amount of hours needed" << endl;
+	cout << hoursNeed << " hours are needed" << endl;
 	cout << "$" << (hoursNeed * LABOR_COST) << " is the cost of labor" << endl;
-	cout << "$" << jobCost(paintNeed,hoursNeed) << " is the total cost of the job." << endl;
+	cout << "$" << jobCost(paintNeed,hoursNeed) << " is the total cost for the job." << endl;
 	
 	return 0;
 }
